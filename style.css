@@ -98,6 +98,7 @@ form {
   flex-direction: column;
   justify-content: space-between;
   position:relative;
+  width:100vw;
 }
 
 form label {
@@ -151,17 +152,25 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   flex-wrap:wrap;
+   
   }
   form label{
    display: flex;
    flex-direction:column;
    position:relative;
+   width:15vw;
   }
+  form input{
+    width:15vw;
+  }
+  form select{
+    width:15vw;
+  }
+  
   form button{
     display:flex;
     flex-direction:column;
-    width:30%;
+    width:30vw;
   }
   
   .group{
