@@ -97,8 +97,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position:relative;
-  width:100%;
+  
+
 }
 
 form label {
