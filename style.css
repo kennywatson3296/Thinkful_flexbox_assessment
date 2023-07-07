@@ -138,16 +138,25 @@ footer p {
   main img{
     width: 25%;
   }
+   
   header{
     display: flex;
     justify-content: space-between;
     margin: 14px 0;
     padding-top: 0;
+   
   }
+ .logo{
+  font-size:10vw;
+ align-self:center;
+ }
   header nav{
     padding-top: 15px;
-    
+    width: 30vw;
+    align-items:center;
+    font-size:3vw;
   }
+  
   form{
     display: flex;
     flex-direction: row;
