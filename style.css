@@ -2,6 +2,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  
 }
 
 h2 {
@@ -64,6 +65,7 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  font-size:15vw;
 }
 header nav{
   display: flex;
@@ -97,20 +99,29 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex:1;
   
-
+}
+form label{
+  font-weight:bold;
+}
+/*adjusts the forms under the breakpoint without adjusting after breakpoint*/
+@media all and (max-width:480px){
+form div{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding-top:10px;
+  padding-bottom:5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+form input, form select{
+  width:30vw;
+}
 }
 
-form label {
-  font-weight: bold;
 
-}
-
-form select,
-form input {
-  margin-bottom: 20px;
- 
-}
 
 form button {
   background-color: #ff385c;
@@ -118,7 +129,7 @@ form button {
   color: #fff;
   font-size: 24px;
   padding: 15px;
- 
+  width: 100%;
 }
 
 /* -------  Footer ------- */
@@ -161,7 +172,11 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   width:100vw;
+   width:100%;
+  
+  }
+  form div{
+    
   }
   form label{
    display: flex;
